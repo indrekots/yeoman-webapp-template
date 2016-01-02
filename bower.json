@@ -2,12 +2,7 @@
   "name": "typography-design",
   "private": true,
   "dependencies": {
-  },
-  "overrides": {
-    "bootstrap-sass": {
-      "main": [
-      ]
-    }
+    "normalize-css": "normalize.css#~3.0.3"
   },
   "devDependencies": {
     "chai": "~3.4.2",
