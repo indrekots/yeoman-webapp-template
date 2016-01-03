@@ -10,6 +10,7 @@ body {
   line-height: 1.5em;
   background-color: #f0f0f0;
   color: #292929;
+  font-family: 'Domine', Georgia, serif;
 }
 
 a {
@@ -28,6 +29,12 @@ header {
   background-size: cover;
   background-position: center 40%;
   color: #d1dbdd;
+  text-align: center;
+}
+
+nav li {
+  list-style: none;
+  text-transform: lowercase;
   text-align: center;
 }
 
@@ -66,7 +73,6 @@ h2 {
 }
 
 p {
-  font-family: 'Domine', Georgia, serif;
   letter-spacing: 0.01em;
 }
 
@@ -108,5 +114,35 @@ blockquote footer {
   .content-wrapper {
     width: 60%;
     max-width: 650px;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(240, 240, 240, .99);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  }
+
+  nav ul {
+    margin: 0.75em 10% 0 0;
+  }
+
+  nav li {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 0.75em;
+  }
+
+  nav::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  header {
+    margin-top: 3em;
   }
 }
