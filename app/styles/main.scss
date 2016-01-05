@@ -45,6 +45,19 @@ nav li {
   text-align: center;
 }
 
+nav a {
+  color: #292929;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #292929;
+}
+
+nav a:hover {
+  color: #3e606f;
+}
+
 .light {
   color: #4a4a4a;
 }
@@ -139,6 +152,10 @@ blockquote footer {
 
   nav li {
     float: left;
+  }
+
+  nav a {
+    display: block;
     padding-top: 0.75em;
     padding-left: 10px;
     padding-right: 10px;
@@ -147,10 +164,9 @@ blockquote footer {
     font-family: 'Montserrat', Arial, sans-serif;
   }
 
-  nav li:hover {
+  nav a:hover {
     padding-bottom: 0.6em;
     border-bottom: 0.15em solid #3e606f;
-    color: #3e606f;
     transition: .1s;
   }
 
