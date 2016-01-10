@@ -111,6 +111,10 @@ p + p {
   text-indent: 2em;
 }
 
+.content p:last-child {
+  margin-bottom: 6em;
+}
+
 blockquote {
   font-style: italic;
   position: relative;
@@ -129,6 +133,18 @@ blockquote footer {
 .content-wrapper {
   width: 85%;
   margin: 0 auto;
+}
+
+.footer {
+  background: #193441;
+  //box-shadow: 0 0 10px rgba(25, 52, 65, .8);
+  box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 1);
+  padding: 1.5em 0 1.5em;
+  font-size: 0.5em;
+}
+
+.light-text {
+  color: rgba(145, 170, 157, .5);
 }
 
 @media (min-width: 360px) {
