@@ -4,6 +4,18 @@
 /* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 @import url(https://fonts.googleapis.com/css?family=Domine:400,700);
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?dciogk');
+    src:    url('../fonts/icomoon.eot?dciogk#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?dciogk') format('truetype'),
+        url('../fonts/icomoon.woff?dciogk') format('woff'),
+        url('../fonts/icomoon.svg?dciogk#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General */
 
 html,
 body {
@@ -32,13 +44,7 @@ body {
   margin: 0 auto -4em;
 }
 
-a {
-  color: #91aa9d;
-}
-
-a:visited {
-  color: #d1dbdd,
-}
+/* Header section */
 
 header {
   padding-top: 4.2em;
@@ -54,6 +60,30 @@ header {
 header p {
   margin-bottom: 0;
 }
+
+.avatar-img {
+  border-radius: 50%;
+  border: 3px solid #d1dbdd;
+  width: 4.5em;
+  height: 4.5em;
+  box-sizing: border-box;
+}
+
+.author {
+  font-style: italic;
+}
+
+.post-meta {
+  font-size: 0.65em;
+  color: #B9C2C4;
+}
+
+.post-meta span + span {
+  margin-left: 10px;
+}
+
+
+/* Navigation */
 
 nav ul {
   padding: 0;
@@ -84,21 +114,7 @@ nav a:hover {
   color: #3e606f;
 }
 
-.light {
-  color: #4a4a4a;
-}
-
-.avatar-img {
-  border-radius: 50%;
-  border: 3px solid #d1dbdd;
-  width: 4.5em;
-  height: 4.5em;
-  box-sizing: border-box;
-}
-
-.author {
-  font-style: italic;
-}
+/* Typography */
 
 h1, h2 {
   font-family: 'Montserrat', Arial, sans-serif;
@@ -127,29 +143,41 @@ p + p {
   text-indent: 2em;
 }
 
-.post-meta {
-  font-size: 0.65em;
-  color: #B9C2C4;
+a {
+  color: #91aa9d;
 }
 
-.post-meta span + span {
-  margin-left: 10px;
+a:visited {
+  color: #d1dbdd,
+}
+
+/* Body text */
+
+blockquote {
+  font-style: italic;
+  position: relative;
+  font-family: 'Domine', Georgia, serif;
+  quotes: "\201C""\201D""\2018""\2019";
+  margin: 1.5em 0 1.5em;
+  width: 100%;
+}
+
+blockquote footer {
+  text-align: right;
+  font-size: 0.9em;
+  color: #949494;
+}
+
+.width-wrapper {
+  width: 85%;
+  margin: 0 auto;
 }
 
 .content p:last-child {
   margin-bottom: 6em;
 }
 
-@font-face {
-    font-family: 'icomoon';
-    src:    url('../fonts/icomoon.eot?dciogk');
-    src:    url('../fonts/icomoon.eot?dciogk#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?dciogk') format('truetype'),
-        url('../fonts/icomoon.woff?dciogk') format('woff'),
-        url('../fonts/icomoon.svg?dciogk#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+/* Iconography */
 
 [class^="icon-"]::before, [class*=" icon-"]::before {
     /* use !important to prevent issues with browser extensions that change fonts */
@@ -192,25 +220,7 @@ p + p {
     content: "\e907";
 }
 
-blockquote {
-  font-style: italic;
-  position: relative;
-  font-family: 'Domine', Georgia, serif;
-  quotes: "\201C""\201D""\2018""\2019";
-  margin: 1.5em 0 1.5em;
-  width: 100%;
-}
-
-blockquote footer {
-  text-align: right;
-  font-size: 0.9em;
-  color: #949494;
-}
-
-.width-wrapper {
-  width: 85%;
-  margin: 0 auto;
-}
+/* Footer seciton */
 
 .footer {
   background: #193441;
@@ -243,6 +253,8 @@ blockquote footer {
   color: rgba(145, 170, 157, .5);
 }
 
+
+/* Media Queries */
 @media (min-width: 360px) {
   body {
     font-size: 16px;
