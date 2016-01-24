@@ -20,11 +20,9 @@
 html,
 body {
   height: 100%;
-}
-
-html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -50,7 +48,7 @@ header {
   padding-top: 4.2em;
   padding-bottom: 1.8em;
   background: radial-gradient(circle, rgba(0, 0, 0, .7) 20%, rgba(0, 0, 0, .5) 70%, transparent),
-              url('https://culturebadger.files.wordpress.com/2013/05/mountains12.jpg');
+              url('../images/bg.jpg');
   background-size: cover;
   background-position: center 40%;
   color: #d1dbdd;
@@ -66,7 +64,6 @@ header p {
   border: 3px solid #d1dbdd;
   width: 4.5em;
   height: 4.5em;
-  box-sizing: border-box;
 }
 
 .author {
@@ -81,7 +78,6 @@ header p {
 .post-meta span + span {
   margin-left: 10px;
 }
-
 
 /* Navigation */
 
