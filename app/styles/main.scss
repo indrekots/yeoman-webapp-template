@@ -110,6 +110,12 @@ nav a:hover {
   color: #3e606f;
 }
 
+.logo {
+  color: #3e606f;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.5em;
+}
+
 /* Typography */
 
 h1, h2 {
@@ -311,6 +317,11 @@ blockquote footer {
     padding-bottom: 0.6em;
     border-bottom: 0.15em solid #3e606f;
     transition: .1s;
+  }
+
+  nav .logo {
+    float: left;
+    margin: 15px 0 0 10%;
   }
 
   nav::after {
